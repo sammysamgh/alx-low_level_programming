@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints alphabets in lowercase and uppercase
+ * main - program that prints alphabets in lower case except q and e
  *
  * Return: Always 0 (Succes)
  */
@@ -9,18 +9,14 @@ int main(void)
 {
 	int a = 97;
 	int b = 122;
-	int c = 65;
-	int d = 90;
 
 	while (a <= b)
 	{
-		putchar(a);
+		if (a != 101 && a != 113)
+		{
+			putchar(a);
+		}
 		a++;
-	}
-	while (c <= d)
-	{
-		putchar(c);
-		c++;
 	}
 	putchar('\n');
 	return (0);
